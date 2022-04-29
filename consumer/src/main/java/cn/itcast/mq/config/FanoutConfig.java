@@ -14,6 +14,10 @@ public class FanoutConfig {
         return new FanoutExchange("itcast.fanout");
     }
 
+    @Bean Queue simpleQueue() {
+        return new Queue("simple.queue");
+    }
+
     @Bean
     public Queue fanoutQueue1() {
         return new Queue("fanout.queue1");
